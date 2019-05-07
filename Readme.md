@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Oleksii liapin](https://up.htmlacademy.ru/htmlcss/25/user/565937).
-* Наставник: `Юрий Зайцев`.
+* Наставник: [Юрий Зайцев] (https://htmlacademy.ru/profile/yuryzaytsev).
 
 ---
 
