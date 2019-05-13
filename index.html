@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -23,26 +23,27 @@
   </header>
 
   <main class="container">
-    <article class="greeting">
+    <section class="greeting">
       <h1 class="visually-hidden">Седона - город в Аризоне</h1>
-      <img src="img/greeting.jpg" alt="Лого" class="greeting-photo">
-    </article>
+      <img class="greeting-photo" src="img/greeting.jpg" alt="Лого" >
+    </section>
 
-    <article class="advantage">
+    <section class="advantage">
       <h3 class="visually-hidden">Преимущества отдыха в Седоне</h3>
       <p class="advantage-slogan">Седона небольшой городок в Аризоне, заслуживающий большего</p>
       <p class="advantage-cause">рассмотрим 5 причин по которым Седона круче, чем Гранд Каньйон!</p>
-    </article>
+    </section>
 
-    <section class="interest">
-      <h3>Заинтересовались?</h3> <!-- Валидатор говорит, что в sction лучше иметь h2-h6. По смыслу Заинтересовались не очень заголовок. Лучше добавить скрытый? -->
+    <section class="hotel-search">
+    <h2 class="visually-hidden">Поиск отеля</h2>
+      <b>Заинтересовались?</b> <!-- Валидатор говорит, что в sction лучше иметь h2-h6. По смыслу Заинтересовались не очень заголовок. Лучше добавить скрытый? -->
       <p> Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне </p>
     </section>
   </main>
 
   <footer class="main-footer">
-    <a href="#" class="visit-sedona">#Visitsedona</a> <!-- Ссылка? может на твиттер или инст хештег)) -->
+    <a class="visit-sedona" href="#">#Visitsedona</a> <!-- Ссылка? может на твиттер или инст хештег)) -->
     <ul class="footer-social">
       <li><a class="social-button twitter" href="#">Твиттер</a></li>
       <li><a class="social-button fb" href="#">Фейсбук</a></li>
