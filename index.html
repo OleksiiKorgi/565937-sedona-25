@@ -34,32 +34,34 @@
       <p class="advantage-cause">рассмотрим 5 причин по которым Седона круче, чем Гранд Каньйон!</p>
     </section>
 
-    <ul class="feature-list">
+    <ol class="feature-list">
       <li class="true-city">
         <div>
-          <b>Настоящий городок</b>
-          <p>- №1 -</p>
+          <h2>Настоящий городок</h2>
+          <p>
+            <!-- номера я бы добавил потом в виде псевдоэлемента со счетчиком.  -->
+          </p>
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <img class="feature-picture" src="img/feature-picture.jpg" alt="Нетуристический город" width="800" heigh="256">
+        <img class="feature-picture" src="img/feature-picture.jpg" alt="Нетуристический город" width="800" height="256">
       </li>
 
       <li class="additional-feature-list">
         <ul class="additional-feature">
           <li>
-            <img class="house-logo" src="img/house-logo.svg" alt="Домик" width="75" height="72">
+            <!-- Декоративные элементы добавим через псевдоэлементы? -->
             <b>Жильё</b>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
 
           <li>
-            <img class="food-logo" src="img/food-logo.svg" alt="Еда" width="74" height="70">
+
             <b>Еда</b>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
 
           <li>
-            <img class="souvenir-logo" src="img/souvenir-logo.svg" alt="Сувениры" width="64" height="76">
+
             <b>Сувениры</b>
             <p>Не только китайского, но и местного производства!!</p>
           </li>
@@ -69,7 +71,7 @@
       <li class="devil-bridge">
         <div>
           <b>Там есть мост дьявола</b>
-          <p>- №2 -</p>
+          <p></p>
           <p>Не только китайского, но и местного производства!</p>
         </div>
         <img src="img/devil-bridge-photo.jpg" alt="Мост Дьявола в Седоне" width="800" height="256">
@@ -77,22 +79,22 @@
 
       <li class="small-area">
         <b>Небольшая площадь</b>
-        <p>- №3 -</p>
+        <p></p>
         <p>Все достопримечательности находятся очень близко</p>
       </li>
 
       <li class="nice-road">
         <b>Красивая дорога</b>
-        <p>- №4 -</p>
+        <p></p>
         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </li>
 
       <li class="few-tourist">
         <b>Мало туристов</b>
-        <p>- №5 -</p>
+        <p></p>
         <p>Большинство едет в гранд каньон и толпится там</p>
       </li>
-    </ul>
+    </ol>
 
 
     <section class="hotel-search">
@@ -100,77 +102,39 @@
       <b>Заинтересовались?</b>
       <p> Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне </p>
+      <button class="button-hotel-search">Поиск гостинницы в Седоне</button>
     </section>
-
   </main>
 
   <form class="hotel-search-popup" action="backend" method="post">
-    <!-- Где лучше размещать popup страницы? Как они и размещены в разметке или после footer? -->
     <fieldset>
-      <h3>Поиск гостинницы в Седоне</h3> <!-- или legend?  -->
       <p class="checkin-date">
-        <label>
-          Дата заезда:
-          <input type="text" name="checkin-date" placeholder="24 апреля 2017">
-          <!--  <img class="calendar-logo" src="img/calendar.svg" alt="Календарь" width="21" height="22">  -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
-            <path
-              d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
-            <path
-              d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
-          </svg>
-
-        </label>
-        <!-- Почему не использовать input type="date" ? -->
-        <!-- Использовать placeholder или value в описании даты? Текст в макете не полупрозрачный тогда по цвету правильнее же value, но по логике placeholder -->
-        <!-- Иконку календаря добавим в поле формы через CSS? -->
+        <label for="checkin-date">Дата заезда:</label>
+        <input type="text" name="checkin-date" id="checkin-date" placeholder="24 апреля 2017">
+        <button class="popup-calendar">иконка календаря фоном </button>
       </p>
 
       <p class="checkout-date">
-        <label>
-          Дата выезда:
-          <input type="text" name="checkout-date" placeholder="14 июля 2017">
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
-            <path
-              d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
-            <path
-              d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
-          </svg>
-        </label>
+        <label for="checkout-date">Дата выезда: </label>
+        <input type="text" name="checkout-date" id="checkout-date" placeholder="14 июля 2017">
+        <button class="popup-calendar">иконка календаря фоном </button>
       </p>
 
       <p class="adult-number">
-        <label>
-          Взрослые:
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="3" viewBox="0 0 12 3">
-            <image id="_копия" data-name=" копия" width="12" height="3" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAAAJklEQVQImWNcuXJlKAMDwyoG4kAYEwMDgxKRikFACaSBeMDAwAAA4bEDmgdSTr8AAAAASUVORK5CYII=" />
-          </svg>
-          <input type="number" name="adults-number" value="2" min="0">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="11" viewBox="0 0 11 11">
-            <image id="_" data-name="" width="11" height="11"
-              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAVUlEQVQYlWNkQAMrV648w8DAYMzAwHA2PDzcBFmWCV0xVCEyjVcxTkCSYkYkNxICZ5mIVAj2A0jxeyIVv8cWdP9h7PDwcBR52oUGNsUwP6D6hYGBAQDrUhFjIwl98gAAAABJRU5ErkJggg==" />
-          </svg>
-        </label>
+        <label for="adults-number">Взрослые:</label>
+        <button class="button-number minus" aria-label="убрать взрослого">-</button>
+        <input type="number" name="adults-number" id="adults-number" value="2" min="0">
+        <button class="button-number plus" aria-label="добавить взрослого">+</button>
       </p>
 
       <p class="children-number">
-        <label>
-          Дети:
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="3" viewBox="0 0 12 3">
-            <image id="_копия" data-name=" копия" width="12" height="3" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAAAJklEQVQImWNcuXJlKAMDwyoG4kAYEwMDgxKRikFACaSBeMDAwAAA4bEDmgdSTr8AAAAASUVORK5CYII=" />
-          </svg>
-          <input type="number" name="adults-number" value="0" min="0">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="11" viewBox="0 0 11 11">
-            <image id="_" data-name="" width="11" height="11"
-              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAVUlEQVQYlWNkQAMrV648w8DAYMzAwHA2PDzcBFmWCV0xVCEyjVcxTkCSYkYkNxICZ5mIVAj2A0jxeyIVv8cWdP9h7PDwcBR52oUGNsUwP6D6hYGBAQDrUhFjIwl98gAAAABJRU5ErkJggg==" />
-          </svg>
-          <!-- Всё равно не пойму почему не использовать для svg графики тег img или не прорисовать +- в css, а потом также указать полупрозрачность в css при наведении
-        и нажатии  -->
-        </label>
+        <label for="children-number">Дети:</label>
+        <button class="button-number minus" aria-label="убрать ребёнка">-</button>
+        <input type="number" name="children-number" id="children-number" value="0" min="0">
+        <button class="button-number plus" aria-label="добавить ребёнка">+</button>
       </p>
 
-      <button class="button-search">Найти</button> <!-- input="submit также будет правильно?" -->
+      <button type="submit" class="button-search">Найти</button>
 
     </fieldset>
 
@@ -179,13 +143,13 @@
   <footer class="main-footer">
     <a class="visit-sedona" href="#">#Visitsedona</a>
     <ul class="footer-social">
-      <li><a class="social-button twitter" href="#" aria-label="Наша Twitter страница "><img src="img/tw-icon.svg" alt="Иконка Твиттер"></a></li>
-      <li><a class="social-button fb" href="#" aria-label="Наша страница в Facebook"><img src="img/fb-icon.svg" alt="Иконка Фейсбук"></a></li>
-      <li><a class="social-button youtube" href="#" aria-label="Наша страница в Youtube"><img src="img/youtube-icon.svg" alt="Иконка Youtube"></a></li>
+      <li><a class="social-button twitter" href="#" aria-label="Наша Twitter страница "></a></li>
+      <li><a class="social-button fb" href="#" aria-label="Наша страница в Facebook"></a></li>
+      <li><a class="social-button youtube" href="#" aria-label="Наша страница в Youtube"></a></li>
     </ul>
     <p class="html-academy">
       <b>website by </b>
-      <a href="https://htmlacademy.ru/" aria-label="Сайт htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Лого htmlacademy" width="115" height="41"></a>
+      <a href="https://htmlacademy.ru/" aria-label="Сайт htmlacademy.ru">htmlacademy.ru</a> <!-- иконку добавим через css -->
     </p>
   </footer>
    

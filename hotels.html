@@ -23,25 +23,24 @@
     </nav>
   </header>
   <main class="container">
-    <form action="">
+    <form method="get" action="">
 
     </form> <!-- Форму пока пропускаю -->
 
     <section class="sort-settings">
-    <h3>Найдено:3</h3>
-    <ul>
-      <li>Сортировка: </li>
-      <li>по цене</li>
-      <li>по типу</li>
-      <li>по рейтингу</li>
-    </ul>
+      <h2>Найдено:3</h2>
+      <ul>
+        <li>Сортировка: </li>
+        <li>по цене</li>
+        <li>по типу</li>
+        <li>по рейтингу</li>
+      </ul>
 
-    <div class="icon-up-down">
-      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
-      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
 
-    </div>
-
+      <ul class="up-down-icon">
+        <li><a class="icon-up" href="#" aria-label="Сортировать от дешёвых к дорогим"></a></li>
+        <li><a class="icon-down" href="#" aria-label="Сортировать от дорогих к дешёвым"></a></li>
+      </ul>
     </section>
 
     <section class="hotel-catalog">
@@ -50,20 +49,6 @@
         <li class="hotel-item">
           <div class="description">
             <h3><a href="#">Amara Resort & Spa</a></h3>
-
-            <!--
-                  <table class="price-and-order-table">
-                    <tr>
-                      <td class="hotel-name">Гостинница</td>
-                      <td class="price">от 4000 Р.</td>
-                    </tr>
-                    <tr>
-                      <td><a class="button information" href="#">Подробнее</a></td>
-                      <td><a class="button order" href="#">Забронировать</a></td>
-                    </tr>
-
-                  </table>
-                  -->
 
             <div class="hotel-name-and-information">
               <p class="hotel-name">Гостинница </p>
@@ -76,7 +61,7 @@
 
           </div>
           <p class="hotel-rating">
-            <span class="rating-stars"><img src="img/star.svg" alt="Пятизвёздночная гостинница"></span> <!-- Размножим звёзды через стили?   -->
+            <span class="rating-stars"></span>
             <span class="rating-mark">Рейтинг:8.5</span>
           </p>
           <a href="#" class="hotels-photo"><img src="img/hotel-amara.jpg" alt="Гостинница Amara Resort & Spa"></a>
@@ -86,19 +71,7 @@
         <li class="hotel-item">
           <div class="description">
             <h3><a href="#">Desert Quail Inn</a></h3>
-            <!--
-            <table class="price-and-order-table">
-                <tr>
-                  <td class="hotel-name">Мотель</td>
-                  <td class="price">от 3000 Р.</td>
-                </tr>
-                <tr>
-                  <td><a class="button information" href="#">Подробнее</a></td>
-                  <td><a class="button order" href="#">Забронировать</a></td>
-                </tr>
 
-              </table>
-           -->
             <div class="hotel-name-and-information">
               <p class="hotel-name">Мотель </p>
               <a class="button information" href="#">Подробнее</a>
@@ -109,7 +82,7 @@
             </div>
           </div>
           <p class="hotel-rating">
-            <span class="rating-stars"><img src="img/star.svg" alt="Трёхзвёздночный мотель"></span>
+            <span class="rating-stars"></span>
             <span class="rating-mark">Рейтинг:8.9</span>
           </p>
           <a href="#" class="hotels-photo"><img src="img/hotel-desert.jpg" alt="Мотель Desert Quail Inn"></a>
@@ -121,20 +94,7 @@
         <li class="hotel-item">
           <div class="description">
             <h3><a href="#">Villas at Poco Diablo</a></h3>
-            <!--
-          <table class="price-and-order-table">
-              <tr>
-                <td class="hotel-name">Апартаменты</td>
-                <td class="price">от 2000 Р.</td>
-              </tr>
-              <tr>
-                <td><a class="button information" href="#">Подробнее</a></td>
-                <td><a class="button order" href="#">Забронировать</a></td>
-              </tr>
 
-            </table>
-
-         -->
 
 
             <div class="hotel-name-and-information">
@@ -147,7 +107,7 @@
             </div>
           </div>
           <p class="hotel-rating">
-            <span class="rating-stars"><img src="img/star.svg" alt="Двухвёздночные апартаменты"></span>
+            <span class="rating-stars"></span>
             <span class="rating-mark">Рейтинг:9.2</span>
           </p>
           <a href="#" class="hotels-photo"><img src="img/hotel-villas.jpg" alt="Апартаменты Villas at Poco Diablo"></a>
@@ -162,13 +122,13 @@
   <footer class="main-footer">
     <a href="#" class="visit-sedona">#Visitsedona</a>
     <ul class="footer-social">
-      <li><a class="social-button twitter" href="#" aria-label="Наша Twitter страница "><img src="img/tw-icon.svg" alt="Иконка Твиттер"></a></li>
-      <li><a class="social-button fb" href="#" aria-label="Наша страница в Facebook"><img src="img/fb-icon.svg" alt="Иконка Фейсбук"></a></li>
-      <li><a class="social-button youtube" href="#" aria-label="Наша страница в Youtube"><img src="img/youtube-icon.svg" alt="Иконка Youtube"></a></li>
+      <li><a class="social-button twitter" href="#" aria-label="Наша Twitter страница "></a></li>
+      <li><a class="social-button fb" href="#" aria-label="Наша страница в Facebook"></a></li>
+      <li><a class="social-button youtube" href="#" aria-label="Наша страница в Youtube"></a></li>
     </ul>
     <p class="html-academy">
       <b>website by </b>
-      <a href="https://htmlacademy.ru/" aria-label="Сайт htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Лого htmlacademy" width="115" height="41"></a>
+      <a href="https://htmlacademy.ru/" aria-label="Сайт htmlacademy.ru">htmlacademy.ru</a>
     </p>
   </footer>
 
