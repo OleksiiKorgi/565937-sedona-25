@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
@@ -34,67 +36,67 @@
       <p class="advantage-cause">рассмотрим 5 причин по которым Седона круче, чем Гранд Каньйон!</p>
     </section>
 
-    <ol class="feature-list">
-      <li class="true-city">
-        <div>
-          <h2>Настоящий городок</h2>
-          <p>
-            <!-- номера я бы добавил потом в виде псевдоэлемента со счетчиком.  -->
-          </p>
-          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        </div>
-        <img class="feature-picture" src="img/feature-picture.jpg" alt="Нетуристический город" width="800" height="256">
-      </li>
+    <section class="feature">
+      <ol class="feature-list">
+        <li class="feature-item true-city">
+          <div>
+            <h2>Настоящий городок</h2>
+            <p>
+              <!-- номера я бы добавил потом в виде псевдоэлемента со счетчиком.  -->
+            </p>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <img class="feature-picture" src="img/feature-picture.jpg" alt="Нетуристический город" width="800" height="256">
+          <ul class="additional-feature">
+            <li>
+              <!-- Декоративные элементы добавим через псевдоэлементы? -->
+              <b>Жильё</b>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
 
-      <li class="additional-feature-list">
-        <ul class="additional-feature">
-          <li>
-            <!-- Декоративные элементы добавим через псевдоэлементы? -->
-            <b>Жильё</b>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
+            <li>
+              <b>Еда</b>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
 
-          <li>
+            <li>
+              <b>Сувениры</b>
+              <p>Не только китайского, но и местного производства!!</p>
+            </li>
+          </ul>
+        </li>
 
-            <b>Еда</b>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
 
-          <li>
+        <li class="feature-item devil-bridge">
+          <div>
+            <b>Там есть мост дьявола</b>
+            <p></p>
+            <p>Не только китайского, но и местного производства!</p>
+          </div>
+          <img src="img/devil-bridge-photo.jpg" alt="Мост Дьявола в Седоне" width="800" height="256">
+        </li>
 
-            <b>Сувениры</b>
-            <p>Не только китайского, но и местного производства!!</p>
-          </li>
-        </ul>
-      </li>
-
-      <li class="devil-bridge">
-        <div>
-          <b>Там есть мост дьявола</b>
+        <li class="feature-item small-area">
+          <b>Небольшая площадь</b>
           <p></p>
-          <p>Не только китайского, но и местного производства!</p>
-        </div>
-        <img src="img/devil-bridge-photo.jpg" alt="Мост Дьявола в Седоне" width="800" height="256">
-      </li>
+          <p>Все достопримечательности находятся очень близко</p>
+        </li>
 
-      <li class="small-area">
-        <b>Небольшая площадь</b>
-        <p></p>
-        <p>Все достопримечательности находятся очень близко</p>
-      </li>
+        <li class="feature-item nice-road">
+          <b>Красивая дорога</b>
+          <p></p>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
 
-      <li class="nice-road">
-        <b>Красивая дорога</b>
-        <p></p>
-        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-      </li>
+        <li class="feature-item few-tourist">
+          <b>Мало туристов</b>
+          <p></p>
+          <p>Большинство едет в гранд каньон и толпится там</p>
+        </li>
+      </ol>
+    </section>
 
-      <li class="few-tourist">
-        <b>Мало туристов</b>
-        <p></p>
-        <p>Большинство едет в гранд каньон и толпится там</p>
-      </li>
-    </ol>
+
 
 
     <section class="hotel-search">
@@ -103,42 +105,43 @@
       <p> Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне </p>
       <button class="button-hotel-search">Поиск гостинницы в Седоне</button>
+
+      <form class="hotel-search-popup" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <p class="date checkin">
+            <label for="checkin-date">Дата заезда:</label>
+            <input type="text" name="checkin-date" id="checkin-date" placeholder="24 апреля 2017">
+            <button class="popup-calendar">иконка календаря фоном </button>
+          </p>
+
+          <p class="date checkout">
+            <label for="checkout-date">Дата выезда: </label>
+            <input type="text" name="checkout-date" id="checkout-date" placeholder="14 июля 2017">
+            <button class="popup-calendar">иконка календаря фоном </button>
+          </p>
+
+          <p class="number adults">
+            <label for="adults-number">Взрослые:</label>
+            <button class="button-number minus" aria-label="убрать взрослого">-</button>
+            <input type="number" name="adults-number" id="adults-number" value="2" min="0">
+            <button class="button-number plus" aria-label="добавить взрослого">+</button>
+          </p>
+
+          <p class="number children">
+            <label for="children-number">Дети:</label>
+            <button class="button-number minus" aria-label="убрать ребёнка">-</button>
+            <input type="number" name="children-number" id="children-number" value="0" min="0">
+            <button class="button-number plus" aria-label="добавить ребёнка">+</button>
+          </p>
+
+          <button type="submit" class="button-search">Найти</button>
+
+        </fieldset>
+      </form>
     </section>
   </main>
 
-  <form class="hotel-search-popup" action="backend" method="post">
-    <fieldset>
-      <p class="checkin-date">
-        <label for="checkin-date">Дата заезда:</label>
-        <input type="text" name="checkin-date" id="checkin-date" placeholder="24 апреля 2017">
-        <button class="popup-calendar">иконка календаря фоном </button>
-      </p>
 
-      <p class="checkout-date">
-        <label for="checkout-date">Дата выезда: </label>
-        <input type="text" name="checkout-date" id="checkout-date" placeholder="14 июля 2017">
-        <button class="popup-calendar">иконка календаря фоном </button>
-      </p>
-
-      <p class="adult-number">
-        <label for="adults-number">Взрослые:</label>
-        <button class="button-number minus" aria-label="убрать взрослого">-</button>
-        <input type="number" name="adults-number" id="adults-number" value="2" min="0">
-        <button class="button-number plus" aria-label="добавить взрослого">+</button>
-      </p>
-
-      <p class="children-number">
-        <label for="children-number">Дети:</label>
-        <button class="button-number minus" aria-label="убрать ребёнка">-</button>
-        <input type="number" name="children-number" id="children-number" value="0" min="0">
-        <button class="button-number plus" aria-label="добавить ребёнка">+</button>
-      </p>
-
-      <button type="submit" class="button-search">Найти</button>
-
-    </fieldset>
-
-  </form>
 
   <footer class="main-footer">
     <a class="visit-sedona" href="#">#Visitsedona</a>
