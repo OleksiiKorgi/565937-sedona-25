@@ -1,6 +1,159 @@
-body{
-  margin:0;
-  padding:0;
+body {
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+  /*Почти весь текст на странице чёрного цвета, задаём в общих стилях чёрный */
+  background-color: #ffffff;
+}
 
-  font-family: 'PT Sans', sans-serif;
+.visually-hidden{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.button{
+  color:#eeeeee;
+  text-align: center;
+  text-transform: uppercase;
+  border:none;
+  /*Прописываем для ссылок и кнопок общие стили*/
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.list-navigation {
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #000000;
+}
+
+.list-navigation a:hover {
+  color: #81b3d2;
+}
+
+.list-navigation a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation-current a {
+  color: #766357;
+}
+
+.greeting {
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+}
+
+.feature-list,
+.additional-feature{
+  list-style: none;
+}
+
+.advantage{
+  text-align: center;
+  line-height: 26px;
+}
+
+.advantage-slogan{
+  font-size: 21px;
+  font-weight: bold;
+   /* Прописывать это значение в этом задании?*/
+  color: #000000;
+}
+
+.advantage-cause{
+  font-size:14px;
+  color: #333333;
+}
+
+.true-city,
+.devil-bridge{
+  color:#ffffff;
+  background-color:#81b3d2;
+}
+
+.small-area,
+.nice-road,
+.few-tourist{
+background-color: #eeeeee;
+}
+
+.visit-sedona{
+  color:#000000;
+  font-weight:bold;
+}
+
+input{
+  background-color: #f2f2f2;
+}
+
+input[type="text"]:hover{
+  background-color: #ebebeb;
+}
+
+input[type="text"]:focus{
+  background-color: #ffffff;
+}
+
+input::placeholder{
+  color:#000000;
+  font-weight: bold;
+}
+
+.button-hotel-search{
+background-color: #766357;
+}
+
+.button-hotel-search:hover{
+  background-color: #604e43;
+}
+
+.button-hotel-search:focus{
+  color:#857871;
+  background-color: #503e33;
+}
+
+.button-search{
+  background-color:#81b3d2;
+}
+
+.button-search:hover{
+  background-color:#669ec0;
+}
+
+.button-search:focus{
+  color:#88b6d1;
+  background-color:#5496bd;
+}
+
+
+
+.html-academy svg{
+  width:115px;
+  height:41px;
+}
+
+.html-academy svg:hover{
+  width:115px;
+  height:41px;
+  fill:#81b3d2; /*Не работает*/
 }
