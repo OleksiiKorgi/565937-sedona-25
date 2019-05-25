@@ -9,7 +9,7 @@ body {
   background-color: #ffffff;
 }
 
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -17,16 +17,15 @@ body {
   margin: -1px;
 }
 
-
 a {
   text-decoration: none;
 }
 
-.button{
-  color:#eeeeee;
+.button {
+  color: #eeeeee;
   text-align: center;
   text-transform: uppercase;
-  border:none;
+  border: none;
   /*Прописываем для ссылок и кнопок общие стили*/
 }
 
@@ -64,96 +63,110 @@ a {
 }
 
 .feature-list,
-.additional-feature{
+.additional-feature {
   list-style: none;
 }
 
-.advantage{
+.advantage {
   text-align: center;
   line-height: 26px;
 }
 
-.advantage-slogan{
+.advantage-slogan {
   font-size: 21px;
   font-weight: bold;
-   /* Прописывать это значение в этом задании?*/
+  /* Прописывать это значение в этом задании?*/
   color: #000000;
 }
 
-.advantage-cause{
-  font-size:14px;
+.advantage-cause {
+  font-size: 14px;
   color: #333333;
 }
 
 .true-city,
-.devil-bridge{
-  color:#ffffff;
-  background-color:#81b3d2;
+.devil-bridge {
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 
 .small-area,
 .nice-road,
-.few-tourist{
-background-color: #eeeeee;
+.few-tourist {
+  background-color: #eeeeee;
 }
 
-.visit-sedona{
-  color:#000000;
-  font-weight:bold;
-}
-
-input{
-  background-color: #f2f2f2;
-}
-
-input[type="text"]:hover{
-  background-color: #ebebeb;
-}
-
-input[type="text"]:focus{
-  background-color: #ffffff;
-}
-
-input::placeholder{
-  color:#000000;
+.visit-sedona {
+  color: #000000;
   font-weight: bold;
 }
 
-.button-hotel-search{
-background-color: #766357;
+input {
+  background-color: #f2f2f2;
 }
 
-.button-hotel-search:hover{
+input[type="text"]:hover {
+  background-color: #ebebeb;
+}
+
+input[type="text"]:focus {
+  background-color: #ffffff;
+}
+
+input::placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
+.button-hotel-search {
+  background-color: #766357;
+}
+
+.button-hotel-search:hover {
   background-color: #604e43;
 }
 
-.button-hotel-search:focus{
-  color:#857871;
+.button-hotel-search:focus {
+  color: #857871;
   background-color: #503e33;
 }
 
-.button-search{
-  background-color:#81b3d2;
+.button-search {
+  background-color: #81b3d2;
 }
 
-.button-search:hover{
-  background-color:#669ec0;
+.button-search:hover {
+  background-color: #669ec0;
 }
 
-.button-search:focus{
-  color:#88b6d1;
-  background-color:#5496bd;
+.button-search:focus {
+  color: #88b6d1;
+  background-color: #5496bd;
 }
 
-
-
-.html-academy svg{
-  width:115px;
-  height:41px;
+.html-academy svg {
+  width: 115px;
+  height: 41px;
 }
 
-.html-academy svg:hover{
-  width:115px;
-  height:41px;
-  fill:#81b3d2; /*Не работает*/
+.html-academy svg:hover {
+  width: 115px;
+  height: 41px;
+  fill: #81b3d2;
+  /*Не работает*/
+}
+
+.sort-settings ul{
+  list-style: none;
+}
+
+.hotel-list a{
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color:#000000;
+}
+
+.hotel-list{
+  list-style:none;
 }
