@@ -149,12 +149,20 @@ input::placeholder {
   height: 41px;
 }
 
-.html-academy svg:hover {
-  width: 115px;
-  height: 41px;
+.html-academy a:hover path {
   fill: #81b3d2;
-  /*Не работает*/
 }
+
+.html-academy a:focus path{
+  fill: #bdbbbc;
+}
+
+
+
+
+
+
+
 
 .sort-settings ul{
   list-style: none;
@@ -231,4 +239,13 @@ color:#81b3d2
 	color:rgba(255, 255, 255, 0.3);
 	background-color:#503e33;
 }
+
+.footer-social li{
+width: 46px;
+ height: 48px;
+ background-color:#81b3d2;
+ margin:5px;
+}
+
+
 
