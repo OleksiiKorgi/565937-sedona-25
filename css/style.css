@@ -34,15 +34,10 @@ a {
   line-height: 26px;
   font-weight: bold;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .list-navigation {
   list-style: none;
-}
-
-.main-navigation a {
-  color: #000000;
 }
 
 .list-navigation a:hover {
@@ -60,11 +55,7 @@ a {
 .greeting {
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
-}
-
-.feature-list,
-.additional-feature {
-  list-style: none;
+  text-align: center;
 }
 
 .advantage {
@@ -75,13 +66,18 @@ a {
 .advantage-slogan {
   font-size: 21px;
   font-weight: bold;
-  /* Прописывать это значение в этом задании?*/
+  line-height: 26px;
   color: #000000;
 }
 
 .advantage-cause {
   font-size: 14px;
   color: #333333;
+}
+
+.feature-list,
+.additional-feature {
+  list-style: none;
 }
 
 .true-city,
@@ -144,6 +140,31 @@ input::placeholder {
   background-color: #5496bd;
 }
 
+.footer-social {
+  list-style-type: none;
+}
+
+.footer-social a {
+  width: 46px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #81b3d2;
+}
+
+.footer-social a:hover {
+  background-color: #669ec0;
+}
+
+.footer-social a:focus {
+  background-color: #5496bd;
+}
+
+.footer-social a:focus path {
+  fill-opacity: 0.4;
+}
+
 .html-academy svg {
   width: 115px;
   height: 41px;
@@ -153,99 +174,99 @@ input::placeholder {
   fill: #81b3d2;
 }
 
-.html-academy a:focus path{
+.html-academy a:focus path {
   fill: #bdbbbc;
 }
 
-
-
-
-
-
-
-
-.sort-settings ul{
+.sort-settings ul {
   list-style: none;
 }
 
-.hotel-name{
+.hotel-name {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  color:#000000;
-}
-.hotel-name:hover{
-color:#81b3d2
+  color: #000000;
 }
 
-.hotel-name:focus{
-	color:rgba(0, 0, 0, 0.3)
+.hotel-name:hover {
+  color: #81b3d2
 }
 
-.hotel-list{
-  list-style:none;
+.hotel-name:focus {
+  color: rgba(0, 0, 0, 0.3)
 }
 
-.main-black{
-	color:#000000;
+.hotel-list {
+  list-style: none;
 }
 
-.current-setting{
-color:#81b3d2
+.main-black {
+  color: #000000;
+}
+
+.current-setting {
+  color: #81b3d2
 }
 
 .sort-settings li:nth-child(3),
-.sort-settings li:nth-child(4){
-	color:rgba(0, 0, 0, 0.3);
-	border-bottom:1px dotted #81b3d2;
+.sort-settings li:nth-child(4) {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-settings li:nth-child(3):hover,
-.sort-settings li:nth-child(4):hover{
-	color:#81b3d2;
-	border-bottom:1px dotted #81b3d2;
+.sort-settings li:nth-child(4):hover {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-settings li:nth-child(3):active,
-.sort-settings li:nth-child(4):active{
-	color:#000000;
-	border:none;
+.sort-settings li:nth-child(4):active {
+  color: #000000;
+  border: none;
 }
 
-.information{
-	color:#ffffff;
-	background-color:blue;
+.icon-up svg path {
+  fill: #cacaca;
 }
 
-.order{
-	color:#ffffff;
-	background-color:#766357;
+.icon-down svg path {
+  fill: #81b3d2;
 }
 
-.information:hover{
-	background-color:#669ec0;
+.up-down-icon svg:hover path {
+  fill: #231f20;
 }
 
-.information:focus{
-	color:rgba(255, 255, 255, 0.3);
-	background-color:#5496bd;
+.up-down-icon a:focus path {
+  fill: #81b3d2;
 }
 
-.order:hover{
-	background-color:#604e43;
+.information {
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 
-.order:focus{
-	color:rgba(255, 255, 255, 0.3);
-	background-color:#503e33;
+.order {
+  color: #ffffff;
+  background-color: #766357;
 }
 
-.footer-social li{
-width: 46px;
- height: 48px;
- background-color:#81b3d2;
- margin:5px;
+.information:hover {
+  background-color: #669ec0;
 }
 
+.information:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
 
+.order:hover {
+  background-color: #604e43;
+}
 
+.order:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
