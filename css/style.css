@@ -7,6 +7,7 @@ body {
   color: #333333;
   /*Почти весь текст на странице чёрного цвета, задаём в общих стилях чёрный */
   background-color: #ffffff;
+  counter-reset: numberCounter;
 }
 
 .visually-hidden {
@@ -90,6 +91,11 @@ a {
   color: #000000;
   font-size: 21px;
   /*Можна задать всем b элементам большого списка размер или лучше задавать меньшим спискам?*/
+}
+
+.feature-item b::after{
+  counter-increment: numberCounter;
+  content:counter(numberCounter);
 }
 
 .true-city b,
