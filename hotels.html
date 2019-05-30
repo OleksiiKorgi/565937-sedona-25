@@ -21,7 +21,7 @@
         <li><a href="index.html">Информация</a></li>
         <li><a href="photo-and-video.html">Фото и видео</a></li>
         <li><a href="map.html">Карта штата</a></li>
-        <li class="site-navigation-current"><a>Гостинницы</a></li>
+        <li><a>Гостинницы</a></li>
       </ul>
     </nav>
   </header>
@@ -31,24 +31,26 @@
     </form> <!-- Форму пока пропускаю -->
 
     <section class="sort-settings">
-      <h2>Найдено:3</h2>
-      <ul>
-        <li class="main-black">Сортировка: </li>
-        <li class="current-setting">по цене</li>
-        <li>по типу</li>
-        <li>по рейтингу</li>
-      </ul>
+      <span class="sort-result">Найдено: <output class="result-count">3</output></span>
+      <div class="sort-types">
+        <span>Сортировка: </span>
+        <ul>
+          <li class="current-setting">по цене</li>
+          <li><a href="#">по типу</a></li>
+          <li><a href="#">по рейтингу</a></li>
+        </ul>
+      </div>
 
 
-      <ul class="up-down-icon">
+      <ul class="sort-controls">
         <li>
-          <a class="icon-up" href="#" aria-label="Сортировать от дешёвых к дорогим">
+          <a class="icon-up non-active" href="#" aria-label="Сортировать от дешёвых к дорогим">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
               <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg>
           </a>
         </li>
         <li>
-          <a class="icon-down" href="#" aria-label="Сортировать от дорогих к дешёвым">
+          <a class="icon-down active" href="#" aria-label="Сортировать от дорогих к дешёвым">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
               <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
           </a>
@@ -75,7 +77,7 @@
           </div>
           <p class="hotel-rating">
             <span class="rating-stars"></span>
-            <span class="rating-mark">Рейтинг:8.5</span>
+            <span class="rating-mark">Рейтинг: 8.5</span>
           </p>
           <a href="#" class="hotels-photo"><img src="img/hotel-amara.jpg" alt="Гостинница Amara Resort & Spa"></a>
         </li>
@@ -96,7 +98,7 @@
           </div>
           <p class="hotel-rating">
             <span class="rating-stars"></span>
-            <span class="rating-mark">Рейтинг:8.9</span>
+            <span class="rating-mark">Рейтинг: 8.9</span>
           </p>
           <a href="#" class="hotels-photo"><img src="img/hotel-desert.jpg" alt="Мотель Desert Quail Inn"></a>
 
@@ -119,7 +121,7 @@
           </div>
           <p class="hotel-rating">
             <span class="rating-stars"></span>
-            <span class="rating-mark">Рейтинг:9.2</span>
+            <span class="rating-mark">Рейтинг: 9.2</span>
           </p>
           <a href="#" class="hotels-photo"><img src="img/hotel-villas.jpg" alt="Апартаменты Villas at Poco Diablo"></a>
 
