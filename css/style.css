@@ -39,8 +39,27 @@ a {
   color: #000000;
 }
 
+.logo-image{
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper{
+  width:1200px;
+  margin:0 auto; /*почему грубо говоря нельзя wrapper закинуть в body что бы вся страница отцентрировалась? */
+}
+
 .list-navigation {
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
   list-style: none;
+  margin:0;
+  padding:0;
+}
+
+.list-navigation li{
+  position:relative;
 }
 
 .list-navigation a {
@@ -57,16 +76,18 @@ a {
 
 .greeting {
   min-height: 545px;
-  background-image: url("../img/polygon.png"), url("../img/background-photo.jpg");
+  background-image: url("../img/polygon.svg"), url("../img/background-photo.jpg");
   background-position: bottom, center;
-  /*убрать линию*/
   background-repeat: no-repeat;
   text-align: center;
+  padding-top: 75px;
+  box-sizing: border-box;
 }
 
 .advantage {
-  text-align: center;
   line-height: 26px;
+  text-align: center;
+  min-width: 216px;
 }
 
 .advantage-slogan {
@@ -74,6 +95,8 @@ a {
   font-weight: bold;
   line-height: 26px;
   color: #000000;
+
+
 }
 
 .advantage-cause {
@@ -85,18 +108,21 @@ a {
 .feature-list,
 .additional-feature {
   list-style: none;
+  margin:0;
+  padding:0;
 }
 
 .feature-list b {
   color: #000000;
   font-size: 21px;
-  /*Можна задать всем b элементам большого списка размер или лучше задавать меньшим спискам?*/
+
 }
 
-.feature-item b::after{
+/*.feature-item b::after{
   counter-increment: numberCounter;
   content:counter(numberCounter);
 }
+*/
 
 .true-city b,
 .devil-bridge b {
@@ -106,14 +132,39 @@ a {
 
 .true-city,
 .devil-bridge {
+  display: flex;
+  min-width: 400px;
+  min-height: 255px;
   background-color: #81b3d2;
   color: #ffffff;
+}
+
+.devil-bridge{
+  flex-direction: row-reverse;
+}
+
+.additional-feature{
+display: flex;
+
+}
+
+.additional-feature li{
+  min-width: 400px;
+  min-height: 330px; /*какому элементу задавать высоту: самому списку или элементам списка?*/
+}
+
+.list-wrapper{
+  display:flex;
+
 }
 
 .small-area,
 .nice-road,
 .few-tourist {
+  min-width: 400px;
+  min-height: 255px;
   background-color: #eeeeee;
+
 }
 
 .visit-sedona {
@@ -123,9 +174,14 @@ a {
   line-height: 26px;
 }
 
+.hotel-search{
+  text-align: center;
+}
+
 .hotel-search b {
   font-size: 30px;
   line-height: 36px;
+  color:#000000;
 }
 
 .hotel-search p {
@@ -133,26 +189,41 @@ a {
   line-height: 24px;
 }
 
+
+
+form{
+  display: flex; /*задать flex форме нормально? */
+  justify-content: center;
+  min-width: 570px;
+  min-height: 395px;
+}
+
 .hotel-search-popup p {
   font-size: 14px;
   line-height: 26px;
-  background-color: #f2f2f2;
-}
 
+}
+input[type="text"]{
+text-transform: uppercase;
+color:#000000;
+font-weight: bold;
+background-color:#f2f2f2;
+border:2px solid #f2f2f2;
+
+}
 input[type="text"]:hover {
   background-color: #ebebeb;
-  outline-width: 0;
+  border: 2px solid #ebebeb;
 }
 
 input[type="text"]:focus {
   background-color: #ffffff;
-  border: solid 2px #e5e5e5;
-  outline-width: 0;
+  border:2px solid #e5e5e5;
+  outline: 0;
 }
 
 input[type="number"] {
   outline-width: 0;
-  /*убирать автоматическую синуюю обводку? */
 }
 
 input::placeholder {
@@ -165,6 +236,7 @@ input::placeholder {
   line-height: 26px;
   font-weight: bold;
   background-color: #766357;
+  color:#ffffff;
 }
 
 .button-hotel-search:hover {
@@ -178,6 +250,7 @@ input::placeholder {
 
 .button-search {
   background-color: #81b3d2;
+  color:#ffffff;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -192,15 +265,33 @@ input::placeholder {
   background-color: #5496bd;
 }
 
+.main-footer{
+  min-height: 120px;
+  outline: 1px solid blue;
+}
+
+.main-footer .wrapper{
+  display:flex;
+  justify-content: space-around;
+  align-items: flex-end;
+
+}
+
 .footer-social {
+  display: flex;
+  min-width:150px; /* 3*46 + 12 между иконками */
+  justify-content: space-between;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+
 }
 
 .footer-social a {
   width: 46px;
   height: 48px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #81b3d2;
 }
@@ -217,6 +308,9 @@ input::placeholder {
   fill-opacity: 0.4;
 }
 
+.html-academy{
+  display: flex;
+}
 .html-academy span {
   line-height: 26px;
 }
@@ -334,4 +428,8 @@ input::placeholder {
 .order:focus {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
+}
+
+.main-header{
+  min-height: 56px;
 }

@@ -10,21 +10,28 @@
 </head>
 
 <body>
+
   <header class="main-header">
+    <div class="wrapper">
     <nav class="main-navigation">
-      <a class="logo">
-        <img src="img/logo-sedona.svg" alt="Лого компании Седона" width="140" height="72"> <!-- Задавать размеры лучше в css или прямо в html разметке? -->
-      </a>
+      <!-- <a class="logo">
+        <img src="img/logo-sedona.svg" alt="Лого компании Седона" width="140" height="72">
+      </a> -->
       <ul class="list-navigation">
-        <li><a href="information.html">Информация</a></li> <!-- index.html и есть же Информация? -->
+        <li><a href="information.html">Информация</a></li>
         <li><a href="photo-and-video.html">Фото и видео</a></li>
+        <li><a class="logo">
+          <img src="img/logo-sedona.svg" alt="Лого компании Седона" width="140" height="72"> <!-- или лучше через order задать порядок ? -->
+        </a></li>
         <li><a href="map.html">Карта штата</a></li>
         <li><a href="hotels.html">Гостинницы</a></li>
       </ul>
     </nav>
+    </div>
   </header>
 
-  <main class="container">
+
+  <main class="wrapper">
     <section class="greeting">
       <h1 class="visually-hidden">Седона - город в Аризоне</h1>
       <img class="greeting-photo" src="img/intro-welcome.svg" alt="Лого" width="459" height="353">
@@ -32,7 +39,7 @@
 
     <section class="advantage">
       <h2 class="visually-hidden">Преимущества отдыха в Седоне</h2>
-      <p class="advantage-slogan">Седона небольшой городок в Аризоне, заслуживающий большего</p>
+      <p class="advantage-slogan">Седона небольшой городок в Аризоне,<br> заслуживающий большего</p>
       <p class="advantage-cause">рассмотрим 5 причин по которым Седона круче, чем Гранд Каньйон!</p>
     </section>
 
@@ -45,8 +52,9 @@
               <!-- номера я бы добавил потом в виде псевдоэлемента со счетчиком.  -->
             </p>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img class="feature-picture" src="img/feature-picture.jpg" alt="Нетуристический город" width="800" height="256">
           </div>
-          <img class="feature-picture" src="img/feature-picture.jpg" alt="Нетуристический город" width="800" height="256">
+
           <ul class="additional-feature">
             <li>
               <b>Жильё</b>
@@ -71,10 +79,12 @@
             <b>Там есть мост дьявола</b>
             <p></p>
             <p>Не только китайского, но и местного производства!</p>
+              <img src="img/devil-bridge-photo.jpg" alt="Мост Дьявола в Седоне" width="800" height="256">
           </div>
-          <img src="img/devil-bridge-photo.jpg" alt="Мост Дьявола в Седоне" width="800" height="256">
+
         </li>
 
+      <div class="list-wrapper">
         <li class="feature-item small-area">
           <b>Небольшая площадь</b>
           <p></p>
@@ -92,6 +102,7 @@
           <p></p>
           <p>Большинство едет в гранд каньон и толпится там</p>
         </li>
+        </div>
       </ol>
     </section>
 
@@ -143,6 +154,7 @@
 
 
   <footer class="main-footer">
+    <div class="wrapper">
     <a class="visit-sedona" href="#">#Visitsedona</a>
     <ul class="footer-social">
       <li><a class="twitter" href="https://twitter.com/?lang=uk" aria-label="Наша Twitter страница " target="_blank">
@@ -174,6 +186,7 @@
         </svg>
       </a>
     </p>
+    </div>
   </footer>
    
 
