@@ -14,20 +14,17 @@
   <header class="main-header">
     <div class="wrapper">
     <nav class="main-navigation">
-      <!-- <a class="logo">
+       <a class="logo">
         <img src="img/logo-sedona.svg" alt="Лого компании Седона" width="140" height="72">
-      </a> -->
+      </a>
       <ul class="list-navigation">
         <li><a href="information.html">Информация</a></li>
         <li><a href="photo-and-video.html">Фото и видео</a></li>
-        <li><a class="logo">
-          <img src="img/logo-sedona.svg" alt="Лого компании Седона" width="140" height="72"> <!-- или лучше через order задать порядок ? -->
-        </a></li>
         <li><a href="map.html">Карта штата</a></li>
         <li><a href="hotels.html">Гостинницы</a></li>
       </ul>
     </nav>
-    </div>
+
   </header>
 
 
@@ -111,12 +108,14 @@
 
     <section class="hotel-search">
       <h2 class="visually-hidden">Поиск отеля</h2>
+      <div class="container-interest">
       <b>Заинтересовались?</b>
       <p> Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне </p>
       <button class="button button-hotel-search">Поиск гостинницы в Седоне</button>
-
+      </div>
       <form class="hotel-search-popup" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-wrapper">
         <fieldset>
           <p class="date checkin">
             <label for="checkin-date">Дата заезда:</label>
@@ -147,6 +146,7 @@
           <button type="submit" class="button button-search">Найти</button>
 
         </fieldset>
+        </div>
       </form>
     </section>
   </main>

@@ -5,7 +5,6 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
-  /*Почти весь текст на странице чёрного цвета, задаём в общих стилях чёрный */
   background-color: #ffffff;
   counter-reset: numberCounter;
 }
@@ -39,27 +38,31 @@ a {
   color: #000000;
 }
 
-.logo-image{
-  position: relative;
-  z-index: 2;
+.logo {
+  position: absolute;
+  left: 870px;
 }
 
-.wrapper{
-  width:1200px;
-  margin:0 auto; /*почему грубо говоря нельзя wrapper закинуть в body что бы вся страница отцентрировалась? */
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  /*почему грубо говоря нельзя wrapper закинуть в body что бы вся страница отцентрировалась? */
 }
 
 .list-navigation {
-  display:flex;
-  justify-content:space-around;
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0px;
+  /*на макете между 3-4 элементом списка растояние больше, чем 1-2 и 3-4
+  Как реализовать с помощью flex ?
+  */
 }
 
-.list-navigation li{
-  position:relative;
+.list-navigation li {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .list-navigation a {
@@ -87,7 +90,6 @@ a {
 .advantage {
   line-height: 26px;
   text-align: center;
-  min-width: 216px;
 }
 
 .advantage-slogan {
@@ -95,8 +97,6 @@ a {
   font-weight: bold;
   line-height: 26px;
   color: #000000;
-
-
 }
 
 .advantage-cause {
@@ -108,14 +108,13 @@ a {
 .feature-list,
 .additional-feature {
   list-style: none;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .feature-list b {
   color: #000000;
   font-size: 21px;
-
 }
 
 /*.feature-item b::after{
@@ -123,7 +122,6 @@ a {
   content:counter(numberCounter);
 }
 */
-
 .true-city b,
 .devil-bridge b {
   color: #ffffff;
@@ -134,28 +132,25 @@ a {
 .devil-bridge {
   display: flex;
   min-width: 400px;
-  min-height: 255px;
   background-color: #81b3d2;
   color: #ffffff;
 }
 
-.devil-bridge{
+.devil-bridge {
   flex-direction: row-reverse;
 }
 
-.additional-feature{
-display: flex;
 
-}
-
-.additional-feature li{
+.additional-feature {
+  display: flex;
+  justify-content: space-between;
   min-width: 400px;
-  min-height: 330px; /*какому элементу задавать высоту: самому списку или элементам списка?*/
+  min-height: 330px;
+  /*Тут высота нужна?*/
 }
 
-.list-wrapper{
-  display:flex;
-
+.list-wrapper {
+  display: flex;
 }
 
 .small-area,
@@ -164,7 +159,6 @@ display: flex;
   min-width: 400px;
   min-height: 255px;
   background-color: #eeeeee;
-
 }
 
 .visit-sedona {
@@ -174,14 +168,14 @@ display: flex;
   line-height: 26px;
 }
 
-.hotel-search{
+.hotel-search {
   text-align: center;
 }
 
 .hotel-search b {
   font-size: 30px;
   line-height: 36px;
-  color:#000000;
+  color: #000000;
 }
 
 .hotel-search p {
@@ -189,28 +183,25 @@ display: flex;
   line-height: 24px;
 }
 
-
-
-form{
-  display: flex; /*задать flex форме нормально? */
+.form-wrapper {
+  display: flex;
   justify-content: center;
   min-width: 570px;
-  min-height: 395px;
 }
 
 .hotel-search-popup p {
   font-size: 14px;
   line-height: 26px;
-
 }
-input[type="text"]{
-text-transform: uppercase;
-color:#000000;
-font-weight: bold;
-background-color:#f2f2f2;
-border:2px solid #f2f2f2;
 
+input[type="text"] {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
 }
+
 input[type="text"]:hover {
   background-color: #ebebeb;
   border: 2px solid #ebebeb;
@@ -218,7 +209,7 @@ input[type="text"]:hover {
 
 input[type="text"]:focus {
   background-color: #ffffff;
-  border:2px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   outline: 0;
 }
 
@@ -236,7 +227,8 @@ input::placeholder {
   line-height: 26px;
   font-weight: bold;
   background-color: #766357;
-  color:#ffffff;
+  color: #ffffff;
+  vertical-align: bottom;
 }
 
 .button-hotel-search:hover {
@@ -250,10 +242,11 @@ input::placeholder {
 
 .button-search {
   background-color: #81b3d2;
-  color:#ffffff;
+  color: #ffffff;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+
 }
 
 .button-search:hover {
@@ -265,26 +258,31 @@ input::placeholder {
   background-color: #5496bd;
 }
 
-.main-footer{
-  min-height: 120px;
-  outline: 1px solid blue;
+.container-interest{
+  padding-top:50px;
+  box-sizing: border-box;
+  border:2px solid green; /*временно*/
 }
 
-.main-footer .wrapper{
-  display:flex;
-  justify-content: space-around;
-  align-items: flex-end;
 
+
+
+.main-footer .wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  box-sizing: border-box;
 }
 
 .footer-social {
   display: flex;
-  min-width:150px; /* 3*46 + 12 между иконками */
+  min-width: 150px;
+  /* 3*46 + 12 между иконками */
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0;
-
 }
 
 .footer-social a {
@@ -308,9 +306,6 @@ input::placeholder {
   fill-opacity: 0.4;
 }
 
-.html-academy{
-  display: flex;
-}
 .html-academy span {
   line-height: 26px;
 }
@@ -318,6 +313,7 @@ input::placeholder {
 .html-academy svg {
   width: 115px;
   height: 41px;
+  vertical-align: bottom;
 }
 
 .html-academy a:hover path {
@@ -430,6 +426,62 @@ input::placeholder {
   background-color: #503e33;
 }
 
-.main-header{
+.main-header {
   min-height: 56px;
+}
+
+/*Сетка для hotels.index*/
+.hotel-form {
+  min-height: 217px;
+  outline: 1px solid blue; /*временно*/
+}
+
+.sort-settings {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 87px;
+}
+
+.sort-types ul {
+  display: flex;
+}
+
+.sort-types li {
+  padding-right: 30px;
+}
+
+.sort-types {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-left: 45px;
+}
+
+.sort-controls {
+  display: flex;
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.hotel-catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-item {
+  display: flex;
+  padding: 35px 0;
+  min-height: 153px;
+}
+
+.hotel-rating {
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.description {
+  display: flex;
+  flex-basis: 520px;
 }

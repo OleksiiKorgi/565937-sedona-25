@@ -14,12 +14,12 @@
   <header class="main-header">
     <div class="wrapper">
     <nav class="main-navigation">
+      <a class="logo">
+       <img src="img/logo-sedona.svg" alt="Лого компании Седона" width="140" height="72">
+     </a>
       <ul class="list-navigation">
         <li><a href="information.html">Информация</a></li>
         <li><a href="photo-and-video.html">Фото и видео</a></li>
-        <li><a class="logo">
-          <img src="img/logo-sedona.svg" alt="Лого компании Седона" width="140" height="72"> <!-- или лучше через order задать порядок ? -->
-        </a></li>
         <li><a href="map.html">Карта штата</a></li>
         <li><a href="hotels.html">Гостинницы</a></li>
       </ul>
@@ -28,9 +28,11 @@
   </header>
 
   <main class="wrapper">
+    <div class="hotel-form">
     <form method="get" action="">
 
     </form> <!-- Форму пока пропускаю -->
+    </div>
 
     <section class="sort-settings">
       <span class="sort-result">Найдено: <output class="result-count">3</output></span>
@@ -58,15 +60,17 @@
           </a>
         </li>
       </ul>
+
     </section>
 
     <section class="hotel-catalog">
       <h2 class="visually-hidden">Список отелей</h2>
       <ul class="hotel-list">
         <li class="hotel-item">
-          <div class="description">
-            <h3><a class="hotel-name" href="#">Amara Resort & Spa</a></h3>
 
+          <div class="description">
+            <a href="#" class="hotels-photo"><img src="img/hotel-amara.jpg" alt="Гостинница Amara Resort & Spa"></a>
+            <h3><a class="hotel-name" href="#">Amara Resort & Spa</a></h3>
             <div class="hotel-name-and-information">
               <p class="hotel-type">Гостинница </p>
               <a class="button information" href="#">Подробнее</a>
@@ -75,20 +79,20 @@
               <p class="price">от 4000 Р.</p>
               <a class="button order" href="#">Забронировать</a>
             </div>
-
           </div>
+
           <p class="hotel-rating">
             <span class="rating-stars"></span>
             <span class="rating-mark">Рейтинг: 8.5</span>
           </p>
-          <a href="#" class="hotels-photo"><img src="img/hotel-amara.jpg" alt="Гостинница Amara Resort & Spa"></a>
+
         </li>
 
 
         <li class="hotel-item">
           <div class="description">
+            <a href="#" class="hotels-photo"><img src="img/hotel-desert.jpg" alt="Мотель Desert Quail Inn"></a>
             <h3><a class="hotel-name" href="#">Desert Quail Inn</a></h3>
-
             <div class="hotel-name-and-information">
               <p class="hotel-type">Мотель </p>
               <a class="button information" href="#">Подробнее</a>
@@ -102,7 +106,7 @@
             <span class="rating-stars"></span>
             <span class="rating-mark">Рейтинг: 8.9</span>
           </p>
-          <a href="#" class="hotels-photo"><img src="img/hotel-desert.jpg" alt="Мотель Desert Quail Inn"></a>
+
 
         </li>
 
@@ -110,8 +114,8 @@
 
         <li class="hotel-item">
           <div class="description">
+            <a href="#" class="hotels-photo"><img src="img/hotel-villas.jpg" alt="Апартаменты Villas at Poco Diablo"></a>
             <h3><a class="hotel-name" href="#">Villas at Poco Diablo</a></h3>
-
             <div class="hotel-name-and-information">
               <p class="hotel-type">Апартаменты </p>
               <a class="button information" href="#">Подробнее</a>
@@ -125,7 +129,7 @@
             <span class="rating-stars"></span>
             <span class="rating-mark">Рейтинг: 9.2</span>
           </p>
-          <a href="#" class="hotels-photo"><img src="img/hotel-villas.jpg" alt="Апартаменты Villas at Poco Diablo"></a>
+
 
         </li>
       </ul>
