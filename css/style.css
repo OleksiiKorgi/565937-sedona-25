@@ -35,11 +35,12 @@ a {
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+  position: relative;
 }
 
 .logo {
   position: absolute;
-  left: 870px;
+  left:530px;
 }
 
 .wrapper {
@@ -56,6 +57,7 @@ a {
   padding: 0px;
   /*на макете между 3-4 элементом списка растояние больше, чем 1-2 и 3-4
   Как реализовать с помощью flex ?
+  Поменял позиционирование навигации на relative и исправилось.
   */
 }
 
