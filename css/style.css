@@ -6,7 +6,6 @@ body {
   text-transform: uppercase;
   color: #333333;
   background-color: #ffffff;
-  counter-reset: numberCounter;
 }
 
 .visually-hidden {
@@ -140,7 +139,6 @@ a {
   flex-direction: row-reverse;
 }
 
-
 .additional-feature {
   display: flex;
   justify-content: space-between;
@@ -246,7 +244,6 @@ input::placeholder {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-
 }
 
 .button-search:hover {
@@ -258,14 +255,12 @@ input::placeholder {
   background-color: #5496bd;
 }
 
-.container-interest{
-  padding-top:50px;
+.container-interest {
+  padding-top: 50px;
   box-sizing: border-box;
-  border:2px solid green; /*временно*/
+  border: 2px solid green;
+  /*временно*/
 }
-
-
-
 
 .main-footer .wrapper {
   display: flex;
@@ -433,7 +428,8 @@ input::placeholder {
 /*Сетка для hotels.index*/
 .hotel-form {
   min-height: 217px;
-  outline: 1px solid blue; /*временно*/
+  outline: 1px solid blue;
+  /*временно*/
 }
 
 .sort-settings {
@@ -441,6 +437,24 @@ input::placeholder {
   justify-content: flex-start;
   align-items: center;
   min-height: 87px;
+  padding-left: 72px;
+  box-sizing: border-box;
+  /*в таких блоках задавать высоту или padding?*
+  и ещё вопрос. Как в таком случае вычислять padding имея макет с размерами?
+  */
+}
+
+.sort-types {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 45px;
+  padding-top: 6px;
+  .
+  /*Можно через флекс задать, что бы элементы в  этом div
+  выравнивались по нижнему краю span "Найдено" ?
+  */
 }
 
 .sort-types ul {
@@ -451,18 +465,11 @@ input::placeholder {
   padding-right: 30px;
 }
 
-.sort-types {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  margin-left: 45px;
-}
-
 .sort-controls {
   display: flex;
   margin-left: auto;
   margin-right: 70px;
+  padding-top: 6px;
 }
 
 .hotel-catalog {
