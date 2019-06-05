@@ -23,7 +23,7 @@ a {
   text-decoration: none;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
@@ -45,7 +45,7 @@ img{
 
 .logo {
   position: absolute;
-  left:530px;
+  left: 530px;
 }
 
 .wrapper {
@@ -68,23 +68,21 @@ img{
 .list-navigation li {
   padding-top: 15px;
   padding-bottom: 15px;
-
 }
 
-.main-navigation{
+.main-navigation {
   padding-left: 73px;
   padding-right: 73px;
 }
 
-.list-navigation li:nth-child(3){
+.list-navigation li:nth-child(3) {
   margin-left: auto;
   padding-right: 160px;
 }
 
- .list-navigation li:nth-child(2){
+.list-navigation li:nth-child(2) {
   padding-left: 145px;
 }
-
 
 .list-navigation a {
   color: #000000;
@@ -106,7 +104,6 @@ img{
   text-align: center;
   padding-top: 75px;
   box-sizing: border-box;
-  
 }
 
 .advantage {
@@ -147,7 +144,6 @@ img{
   content:counter(numberCounter);
 }
 */
-
 .true-city b,
 .devil-bridge b {
   color: #ffffff;
@@ -157,12 +153,10 @@ img{
 .true-city,
 .devil-bridge {
   display: flex;
-  justify-content:space-between;
-
+  justify-content: space-between;
   min-width: 400px;
   background-color: #81b3d2;
   color: #ffffff;
-
 }
 
 .devil-bridge {
@@ -175,8 +169,8 @@ img{
   /*Тут высота нужна?*/
 }
 
-.additional-feature li{
-  width:400px;
+.additional-feature li {
+  width: 400px;
 }
 
 .list-wrapper {
@@ -185,8 +179,8 @@ img{
 
 .feature-item-column {
   min-width: 400px;
-
   background-color: #eeeeee;
+  box-sizing: border-box;
 }
 
 .visit-sedona {
@@ -222,11 +216,11 @@ img{
   line-height: 26px;
 }
 
-.date{
+.date {
   display: flex;
 }
 
-.number{
+.number {
   display: inline-block;
 }
 
@@ -236,7 +230,6 @@ input[type="text"] {
   font-weight: bold;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
-
 }
 
 input[type="text"]:hover {
@@ -252,19 +245,12 @@ input[type="text"]:focus {
 
 input[type="number"] {
   outline-width: 0;
-  /* min-width:115px;
-  min-height: 40px; */
-
 }
-
-
 
 input::placeholder {
   color: #000000;
   font-weight: bold;
 }
-
-
 
 .button-hotel-search {
   font-size: 21px;
@@ -291,8 +277,8 @@ input::placeholder {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  width:461px;
-  height:60px;
+  width: 461px;
+  height: 60px;
 }
 
 .button-search:hover {
@@ -317,12 +303,11 @@ input::placeholder {
   box-sizing: border-box;
 }
 
-.footer-container{
+.footer-container {
   min-width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .footer-social {
@@ -372,7 +357,6 @@ input::placeholder {
 .html-academy a:focus path {
   fill: #bdbbbc;
 }
-
 
 .sort-settings ul {
   list-style: none;
@@ -494,7 +478,7 @@ input::placeholder {
   justify-content: flex-start;
   align-items: center;
   padding-left: 72px;
-  padding-top:33px;
+  padding-top: 33px;
   box-sizing: border-box;
   /*в таких блоках задавать высоту или padding?*
   и ещё вопрос. Как в таком случае вычислять padding имея макет с размерами?
@@ -536,13 +520,11 @@ input::placeholder {
 
 .hotel-item {
   display: flex;
-  padding:35px 73px;
-  min-height: 153px;
+  padding: 35px 73px;
 }
 
 .hotel-rating {
   margin-left: auto;
-
 }
 
 .description {
