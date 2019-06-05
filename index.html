@@ -43,12 +43,14 @@
     <section class="feature">
       <ol class="feature-list">
         <li class="feature-item">
-          <div class="true-city">
+       <div class="true-city">
+          <div class="true-city-wrapper">
             <b>Настоящий городок</b>
             <p>
               <!-- номера я бы добавил потом в виде псевдоэлемента со счетчиком.  -->
             </p>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
             <img class="feature-picture" src="img/feature-picture.jpg" alt="Нетуристический город" width="800" height="256">
           </div>
 
@@ -73,33 +75,35 @@
 
         <li class="feature-item">
           <div class="devil-bridge">
+            <div class="deval-bridge-wrapper">
             <b>Там есть мост дьявола</b>
             <p></p>
             <p>Не только китайского, но и местного производства!</p>
+            </div>
             <img src="img/devil-bridge-photo.jpg" alt="Мост Дьявола в Седоне" width="800" height="256">
           </div>
 
         </li>
 
-        <div class="list-wrapper">
-          <li class="feature-item small-area">
+
+          <li class="feature-item feature-item-column">
             <b>Небольшая площадь</b>
             <p></p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
 
-          <li class="feature-item nice-road">
+          <li class="feature-item feature-item-column">
             <b>Красивая дорога</b>
             <p></p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
 
-          <li class="feature-item few-tourist">
+          <li class="feature-item feature-item-column">
             <b>Мало туристов</b>
             <p></p>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
-        </div>
+
       </ol>
     </section>
 
@@ -155,7 +159,11 @@
 
   <footer class="main-footer">
     <div class="wrapper">
+      <div class="footer-container">
       <a class="visit-sedona" href="#">#Visitsedona</a>
+</div>
+
+    <div class="footer-container">
       <ul class="footer-social">
         <li><a class="twitter" href="https://twitter.com/?lang=uk" aria-label="Наша Twitter страница " target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
@@ -176,6 +184,8 @@
           </a>
         </li>
       </ul>
+      </div>
+      <div class="footer-container">
       <p class="html-academy">
         <span>website by </span>
         <a href="https://htmlacademy.ru/" aria-label="Сайт htmlacademy.ru"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">
@@ -186,7 +196,9 @@
           </svg>
         </a>
       </p>
+      </div>
     </div>
+
   </footer>
    
 
