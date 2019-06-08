@@ -28,6 +28,11 @@ img {
   height: auto;
 }
 
+.fieldset {
+  padding: 0px;
+  margin: 0px;
+}
+
 .button {
   color: #eeeeee;
   text-align: center;
@@ -45,17 +50,18 @@ img {
 
 .logo {
   position: absolute;
-  left: 530px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .wrapper {
   width: 1200px;
   margin: 0 auto;
-  /*почему грубо говоря нельзя wrapper закинуть в body что бы вся страница отцентрировалась? */
 }
 
 .list-navigation {
   display: flex;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0px;
@@ -66,6 +72,7 @@ img {
 }
 
 .list-navigation li {
+  width: 239px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -75,13 +82,14 @@ img {
   padding-right: 73px;
 }
 
-.list-navigation li:nth-child(3) {
-  margin-left: auto;
-  padding-right: 160px;
+.list-navigation li:nth-child(1),
+.list-navigation li:nth-child(2) {
+  text-align: left;
 }
 
-.list-navigation li:nth-child(2) {
-  padding-left: 145px;
+.list-navigation li:nth-child(3),
+.list-navigation li:nth-child(4) {
+  text-align: right;
 }
 
 .list-navigation a {
@@ -150,37 +158,27 @@ img {
   font-weight: bold;
 }
 
-.true-city,
-.devil-bridge {
+.feature-text-wrapper {
+  width: 100%;
+  ;
   display: flex;
   justify-content: space-between;
-  min-width: 400px;
   background-color: #81b3d2;
   color: #ffffff;
 }
 
-.devil-bridge {
+.devil-bridge .feature-text-wrapper {
   flex-direction: row-reverse;
 }
 
-.additional-feature {
-  display: flex;
-  justify-content: space-between;
-  /*Тут высота нужна?*/
-}
-
-.additional-feature li {
-  width: 400px;
-}
-
-.list-wrapper {
-  display: flex;
-}
-
 .feature-item-column {
-  min-width: 400px;
+  width: 400px;
   background-color: #eeeeee;
   box-sizing: border-box;
+}
+
+.additional-feature {
+  background-color: ffffff;
 }
 
 .visit-sedona {
@@ -245,6 +243,8 @@ input[type="text"]:focus {
 
 input[type="number"] {
   outline-width: 0;
+  width: 117px;
+  min-height: 39px;
 }
 
 input::placeholder {
@@ -477,6 +477,7 @@ input::placeholder {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-right: 72px;
   padding-left: 72px;
   padding-top: 33px;
   box-sizing: border-box;
@@ -509,7 +510,6 @@ input::placeholder {
 .sort-controls {
   display: flex;
   margin-left: auto;
-  padding-right: 73px;
   padding-top: 6px;
 }
 
