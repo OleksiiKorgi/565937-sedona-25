@@ -61,15 +61,17 @@ img {
 
 .list-navigation {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0px;
   padding-right: 0px;
-  /*на макете между 3-4 элементом списка растояние больше, чем 1-2 и 3-4
-  Как реализовать с помощью flex ?
-  */
 }
+
+.list-navigation li:nth-child(3){
+  margin-left: auto;
+}
+
+
 
 .list-navigation li {
   width: 239px;
@@ -142,32 +144,36 @@ img {
   padding: 0;
 }
 
+.feature-item-fullwidth{
+  width:100%;
+}
+
 .feature-list b {
   color: #000000;
   font-size: 21px;
 }
 
-/*.feature-item b::after{
-  counter-increment: numberCounter;
-  content:counter(numberCounter);
-}
-*/
+
 .true-city b,
 .devil-bridge b {
   color: #ffffff;
   font-weight: bold;
 }
 
+
 .feature-text-wrapper {
-  width: 100%;
-  ;
+  width: 400px;
+}
+
+.true-city,
+.devil-bridge{
   display: flex;
   justify-content: space-between;
   background-color: #81b3d2;
   color: #ffffff;
 }
 
-.devil-bridge .feature-text-wrapper {
+.devil-bridge  {
   flex-direction: row-reverse;
 }
 
@@ -218,8 +224,9 @@ img {
   display: flex;
 }
 
-.number {
-  display: inline-block;
+.number-people{
+  display:flex;
+
 }
 
 input[type="text"] {
@@ -530,4 +537,60 @@ input::placeholder {
 .description {
   display: flex;
   flex-basis: 520px;
+}
+
+/* декоративные элементы главной страницы */
+
+.feature-item-column{
+  position: relative;
+}
+
+.additional-feature .feature-item-column{
+  padding-top:155px;
+  padding-bottom: 80px;
+}
+
+.accomodation b::before{
+  content: "";
+  position: absolute;
+  top:57px;
+  left:157px;
+
+  width: 75px;
+  height: 72px;
+
+  display: block;
+  background-image:url("../img/house.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.food b::before{
+  content: "";
+  position: absolute;
+  top:58px;
+  left: 160px;
+
+  width:75px;
+  height:70px;
+
+  display: block;
+  background-image:url("../img/food.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.present b::after{
+  content: "";
+  position: absolute;
+  top:51px;
+  right: 179px;
+
+  width:64px;
+  height:76px;
+
+  display: block;
+  background-image:url("../img/present.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
