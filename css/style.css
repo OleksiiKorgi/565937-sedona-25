@@ -67,11 +67,9 @@ img {
   padding-right: 0px;
 }
 
-.list-navigation li:nth-child(3){
+.list-navigation li:nth-child(3) {
   margin-left: auto;
 }
-
-
 
 .list-navigation li {
   width: 239px;
@@ -144,8 +142,8 @@ img {
   padding: 0;
 }
 
-.feature-item-fullwidth{
-  width:100%;
+.feature-item-fullwidth {
+  width: 100%;
 }
 
 .feature-list b {
@@ -153,27 +151,25 @@ img {
   font-size: 21px;
 }
 
-
 .true-city b,
 .devil-bridge b {
   color: #ffffff;
   font-weight: bold;
 }
 
-
 .feature-text-wrapper {
   width: 400px;
 }
 
 .true-city,
-.devil-bridge{
+.devil-bridge {
   display: flex;
   justify-content: space-between;
   background-color: #81b3d2;
   color: #ffffff;
 }
 
-.devil-bridge  {
+.devil-bridge {
   flex-direction: row-reverse;
 }
 
@@ -224,9 +220,8 @@ img {
   display: flex;
 }
 
-.number-people{
-  display:flex;
-
+.number-people {
+  display: flex;
 }
 
 input[type="text"] {
@@ -540,57 +535,50 @@ input::placeholder {
 }
 
 /* декоративные элементы главной страницы */
-
-.feature-item-column{
+.feature-item-column {
   position: relative;
 }
 
-.additional-feature .feature-item-column{
-  padding-top:155px;
+.additional-feature .feature-item-column {
+  padding-top: 155px;
   padding-bottom: 80px;
 }
 
-.accomodation b::before{
+.accomodation b::before {
   content: "";
   position: absolute;
-  top:57px;
-  left:157px;
-
+  top: 57px;
+  left: 157px;
   width: 75px;
   height: 72px;
-
   display: block;
-  background-image:url("../img/house.svg");
+  background-image: url("../img/house.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.food b::before{
+.food b::before {
   content: "";
   position: absolute;
-  top:58px;
+  top: 58px;
   left: 160px;
-
-  width:75px;
-  height:70px;
-
+  width: 75px;
+  height: 70px;
   display: block;
-  background-image:url("../img/food.svg");
+  background-image: url("../img/food.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.present b::after{
+.present b::after {
   content: "";
   position: absolute;
-  top:51px;
+  top: 51px;
   right: 179px;
-
-  width:64px;
-  height:76px;
-
+  width: 64px;
+  height: 76px;
   display: block;
-  background-image:url("../img/present.svg");
+  background-image: url("../img/present.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
