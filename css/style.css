@@ -29,8 +29,11 @@ img {
 }
 
 .fieldset {
-  padding: 0px;
   margin: 0px;
+}
+
+.form-wrapper p {
+  padding-right: 55px;
 }
 
 .button {
@@ -57,10 +60,17 @@ img {
 .wrapper {
   width: 1200px;
   margin: 0 auto;
+  counter-reset: myCounter;
+}
+
+.feature-item p {
+  margin: 0px;
+  padding: 0px;
 }
 
 .list-navigation {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0px;
@@ -115,8 +125,10 @@ img {
 }
 
 .advantage {
-  line-height: 26px;
   text-align: center;
+  padding-top: 37px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
 }
 
 .advantage-slogan {
@@ -124,6 +136,7 @@ img {
   font-weight: bold;
   line-height: 26px;
   color: #000000;
+  margin-bottom: 35px;
 }
 
 .advantage-cause {
@@ -151,22 +164,27 @@ img {
   font-size: 21px;
 }
 
-.true-city b,
-.devil-bridge b {
+.advantage-city b {
   color: #ffffff;
   font-weight: bold;
 }
 
-.feature-text-wrapper {
-  width: 400px;
+.feature-item p {
+  margin-top: 65px;
 }
 
-.true-city,
-.devil-bridge {
+.feature-text-wrapper {
+  width: 400px;
+  padding: 45px 55px 0px 55px;
+  position: relative;
+}
+
+.advantage-city {
   display: flex;
   justify-content: space-between;
   background-color: #81b3d2;
   color: #ffffff;
+  text-align: center;
 }
 
 .devil-bridge {
@@ -177,6 +195,12 @@ img {
   width: 400px;
   background-color: #eeeeee;
   box-sizing: border-box;
+  text-align: center;
+  padding: 45px 80px 55px 90px;
+}
+
+.additional-feature p {
+  margin-top: 29px;
 }
 
 .additional-feature {
@@ -203,12 +227,27 @@ img {
 .hotel-search p {
   font-size: 14px;
   line-height: 24px;
+  margin-top: 30px;
+}
+
+fieldset {
+  box-sizing: border-box;
+  padding-left: 55px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  padding-right: 55px;
+}
+
+fieldset label {
+  display: inline-block;
+  padding-top: 6px;
 }
 
 .form-wrapper {
   display: flex;
   justify-content: center;
   min-width: 570px;
+  box-sizing: border-box;
 }
 
 .hotel-search-popup p {
@@ -218,6 +257,19 @@ img {
 
 .date {
   display: flex;
+  position: relative;
+}
+
+.popup-calendar {
+  position: absolute;
+  top: 10px;
+  left: 400px;
+  background: none;
+  border: none;
+}
+
+.popup-calendar svg {
+  fill-opacity: 0.3;
 }
 
 .number-people {
@@ -230,6 +282,12 @@ input[type="text"] {
   font-weight: bold;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  padding-left: 12px;
+  width: 347px;
+  height: 38px;
 }
 
 input[type="text"]:hover {
@@ -252,15 +310,6 @@ input[type="number"] {
 input::placeholder {
   color: #000000;
   font-weight: bold;
-}
-
-.button-hotel-search {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  background-color: #766357;
-  color: #ffffff;
-  vertical-align: bottom;
 }
 
 .button-hotel-search:hover {
@@ -293,10 +342,35 @@ input::placeholder {
 }
 
 .container-interest {
+  min-height: 290px;
   padding-top: 50px;
+  /* padding-right: 380px;
+  padding-left: 380px; */
   box-sizing: border-box;
-  border: 2px solid green;
-  /*временно*/
+  text-align: center;
+}
+
+.container-interest p {
+  margin: auto;
+  margin-bottom: 45px;
+  margin-top: 23px;
+  width: 450px;
+  text-align: center;
+}
+
+.button-hotel-search {
+  width: 565px;
+  height: 85px;
+  /* position: absolute;
+  bottom: 0;
+  transform: translateX(-50%); */
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #766357;
+  color: #ffffff;
+  margin-bottom: 0;
+  margin: 0 auto;
 }
 
 .main-footer .wrapper {
@@ -435,12 +509,22 @@ input::placeholder {
 }
 
 .information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 27px;
   color: #ffffff;
   background-color: #81b3d2;
   font-weight: bold;
 }
 
 .order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 142px;
+  height: 27px;
   color: #ffffff;
   background-color: #766357;
   font-weight: bold;
@@ -468,11 +552,29 @@ input::placeholder {
   min-height: 56px;
 }
 
-/*Сетка для hotels.index*/
-.hotel-form {
-  min-height: 217px;
-  outline: 1px solid blue;
-  /*временно*/
+.hotel-rating {
+  margin-left: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.rating-stars {
+  font-size: 22px;
+  color: #81b3d2;
+  padding-top: 10px;
+}
+
+.rating-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
+  color: #666666;
+  margin-top: 42px;
 }
 
 .sort-settings {
@@ -483,9 +585,6 @@ input::placeholder {
   padding-left: 72px;
   padding-top: 33px;
   box-sizing: border-box;
-  /*в таких блоках задавать высоту или padding?*
-  и ещё вопрос. Как в таком случае вычислять padding имея макет с размерами?
-  */
 }
 
 .sort-types {
@@ -495,10 +594,6 @@ input::placeholder {
   padding: 0;
   padding-left: 45px;
   padding-top: 6px;
-  .
-  /*Можно через флекс задать, что бы элементы в  этом div
-  выравнивались по нижнему краю span "Найдено" ?
-  */
 }
 
 .sort-types ul {
@@ -522,16 +617,43 @@ input::placeholder {
 
 .hotel-item {
   display: flex;
-  padding: 35px 73px;
+  padding: 27px 72px 30px 72px;
+  border-top: 1px solid #e5e5e5;
 }
 
-.hotel-rating {
-  margin-left: auto;
+.description p {
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+
+.hotel-item h3 {
+  display: table-cell;
+  margin: 0px;
+  vertical-align: bottom;
+}
+
+.hotel-item img {
+  margin-right: 31px;
+  padding-top: 5px;
+}
+
+.line-block {
+  display: inline-block;
+}
+
+.hotel-name-and-information {
+  margin-right: 6px;
+}
+
+.hotel-item:nth-child(3) {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .description {
   display: flex;
   flex-basis: 520px;
+  box-sizing: border-box;
 }
 
 /* декоративные элементы главной страницы */
@@ -542,13 +664,15 @@ input::placeholder {
 .additional-feature .feature-item-column {
   padding-top: 155px;
   padding-bottom: 80px;
+  padding-right: 55px;
+  padding-left: 55px;
 }
 
 .accomodation b::before {
   content: "";
   position: absolute;
   top: 57px;
-  left: 157px;
+  left: 162px;
   width: 75px;
   height: 72px;
   display: block;
@@ -574,7 +698,7 @@ input::placeholder {
   content: "";
   position: absolute;
   top: 51px;
-  right: 179px;
+  right: 163px;
   width: 64px;
   height: 76px;
   display: block;
@@ -582,3 +706,31 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+.feature-item {
+  position: relative;
+}
+
+.myCount::after {
+  position: absolute;
+  display: block;
+  top: 90px;
+  left: 170px;
+  transform: translateX(50%);
+  counter-increment: myCounter;
+  content: "- №"counter(myCounter)" -";
+}
+
+.hotel-form {
+  width: 1200px;
+  min-height: 220px;
+  border: 1px solid blue;
+  /* временно */
+}
+
+/* ask
+ создать отдельный класс для counter?
+ точная стилизация текста преимуществ
+
+
+ */

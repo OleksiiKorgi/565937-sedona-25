@@ -22,6 +22,7 @@
           <li><a href="photo-and-video.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостинницы</a></li>
+
         </ul>
       </nav>
 
@@ -29,12 +30,12 @@
 
 
   <main class="wrapper">
-    <section class="greeting">
+    <section class="greeting ">
       <h1 class="visually-hidden">Седона - город в Аризоне</h1>
       <img class="greeting-photo" src="img/intro-welcome.svg" alt="Лого" width="459" height="353">
     </section>
 
-    <section class="advantage">
+    <section class="advantage ">
       <h2 class="visually-hidden">Преимущества отдыха в Седоне</h2>
       <p class="advantage-slogan">Седона небольшой городок в Аризоне,<br> заслуживающий большего</p>
       <p class="advantage-cause">рассмотрим 5 причин по которым Седона круче, чем Гранд Каньйон!</p>
@@ -43,13 +44,10 @@
     <section class="feature">
       <ol class="feature-list">
         <li class="feature-item feature-item-fullwidth">
-          <div class="true-city">
-            <div class="feature-text-wrapper">
+          <div class="advantage-city">
+            <div class="feature-text-wrapper  myCount">
               <b>Настоящий городок</b>
-              <p>
-                <!-- номера я бы добавил потом в виде псевдоэлемента со счетчиком.  -->
-              </p>
-              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <p class="number-increment">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img class="feature-picture" src="img/feature-picture.jpg" alt="Нетуристический город" width="800" height="256">
 
@@ -63,23 +61,22 @@
 
             <li class="feature-item-column food">
               <b>Еда</b>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <p>Всегда заказывайте фирменный бургер, вы&nbspне разочаруетесь!</p>
             </li>
 
             <li class="feature-item-column present">
               <b>Сувениры</b>
-              <p>Не только китайского, но и местного производства!!</p>
+              <p>Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </li>
 
 
-        <li class="feature-item feature-item-fullwidth">
-          <div class="devil-bridge">
-            <div class="feature-text-wrapper">
+        <li class="feature-item feature-item-fullwidth ">
+          <div class="advantage-city devil-bridge">
+            <div class="feature-text-wrapper  myCount">
               <b>Там есть мост дьявола</b>
-              <p></p>
-              <p>Не только китайского, но и местного производства!</p>
+              <p class="number-increment">Да, по нему можно пройти! Если конечно вы осмелитесь!</p>
             </div>
             <img src="img/devil-bridge-photo.jpg" alt="Мост Дьявола в Седоне" width="800" height="256">
 
@@ -88,22 +85,22 @@
         </li>
 
 
-        <li class="feature-item feature-item-column">
+        <li class="feature-item feature-item-column myCount">
           <b>Небольшая площадь</b>
-          <p></p>
-          <p>Все достопримечательности находятся очень близко</p>
+
+          <p class="number-increment">Все достопримечательности находятся очень близко</p>
         </li>
 
-        <li class="feature-item feature-item-column">
+        <li class="feature-item feature-item-column  myCount">
           <b>Красивая дорога</b>
-          <p></p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+
+          <p class="number-increment">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
 
-        <li class="feature-item feature-item-column">
+        <li class="feature-item feature-item-column  myCount">
           <b>Мало туристов</b>
-          <p></p>
-          <p>Большинство едет в гранд каньон и толпится там</p>
+
+          <p class="number-increment">Большинство едет в гранд&nbspканьон и толпится там</p>
         </li>
 
       </ol>
@@ -116,8 +113,10 @@
       <h2 class="visually-hidden">Поиск отеля</h2>
       <div class="container-interest">
         <b>Заинтересовались?</b>
-        <p> Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в седоне </p>
+        <p> Укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в седоне
+
+        </p>
         <button class="button button-hotel-search">Поиск гостинницы в Седоне</button>
       </div>
       <form class="hotel-search-popup" action="https://echo.htmlacademy.ru" method="post">
@@ -125,14 +124,27 @@
           <fieldset>
             <p class="date checkin">
               <label for="checkin-date">Дата заезда:</label>
-              <input type="text" name="checkin-date" id="checkin-date" placeholder="24 апреля 2017">
-              <button class="popup-calendar">иконка календаря фоном </button>
+              <input class="checkin-date" type="text" name="checkin-date" id="checkin-date" placeholder="24 апреля 2017">
+              <button class="popup-calendar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                  <path
+                    d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                  <path
+                    d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                  </svg>
+              </button>
+
             </p>
 
             <p class="date checkout">
               <label for="checkout-date">Дата выезда: </label>
-              <input type="text" name="checkout-date" id="checkout-date" placeholder="14 июля 2017">
-              <button class="popup-calendar">иконка календаря фоном </button>
+              <input class="checkin-date" type="text" name="checkout-date" id="checkout-date" placeholder="14 июля 2017">
+              <button class="popup-calendar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                  <path
+                    d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                  <path
+                    d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                  </svg>
+              </button>
             </p>
 
             <div class="number-people">
