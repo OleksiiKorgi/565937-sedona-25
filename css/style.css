@@ -925,9 +925,9 @@ border:none;
   background-color: #ffffff;
 }
 
-.date-input:focus .calendar-btn-wrapper  {
+.date-input:focus + .calendar-btn-wrapper  {
  background-color: #ffffff;
- outline: solid 2px #e5e5e5;
+
 }
 
 .date-input:hover + .calendar-btn-wrapper{
@@ -943,10 +943,6 @@ border:none;
 .calendar-btn svg:active{
   fill:#81b3d2;
 }
-
-
-
-
 
 
 
@@ -985,4 +981,22 @@ border:none;
   border: none;
   background-color:#f2f2f2;
   outline: none;
+}
+
+.hotel-search-form-button{
+  font-size: 21px;
+  line-height: 26px;
+  color:#ffffff;
+  background-color:#81b3d2;
+  border:none;
+  padding:15px 201px;
+}
+
+.hotel-search-form-button:hover{
+  background-color: #669ec0;
+}
+
+.hotel-search-form-button:active{
+background-color: #5496bd;
+color:rgba(255, 255, 255, 0.3);
 }
