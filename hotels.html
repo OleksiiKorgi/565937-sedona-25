@@ -21,7 +21,7 @@
           <li><a href="information.html">Информация</a></li>
           <li><a href="photo-and-video.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостинницы</a></li>
+          <li><a class="current" href="hotels.html">Гостинницы</a></li>
         </ul>
       </nav>
     </div>
@@ -29,9 +29,74 @@
 
   <main class="wrapper">
     <div class="hotel-form">
-      <form method="get" action="">
+      <div class="infrastructure">
+        <span class="title-hotel-form">Инфраструктура</span>
+        <form class="accomodation-form" method="get" action="">
+          <label class="login-checkbox" for="pool">
+          <input type="checkbox" name="pool" id="pool" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
+          Бассейн
+        </label>
 
-      </form> <!-- Форму пока пропускаю -->
+          <label class="login-checkbox" for="parking">
+          <input type="checkbox" name="parking" id="parking" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
+            Парковка
+          </label>
+
+          <label class="login-checkbox" for="wifi">
+          <input type="checkbox" name="wifi" id="wifi" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
+          wi-fi
+        </label>
+        </form>
+      </div>
+
+      <div class="type-of-accomodation">
+        <span class="title-hotel-form">Тип жилья:</span>
+        <form class="accomodation-form" method="get" action="">
+
+          <label class="login-checkbox" for="hotel">
+          <input type="checkbox" name="hotel" id="hotel" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Гостинница
+          </label>
+
+
+          <label class="login-checkbox" for="motel">
+              <input type="checkbox" name="motel" id="motel" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
+            Мотель
+          </label>
+
+
+          <label class="login-checkbox" for="appartment">
+            <input type="checkbox" name="appartment" id="appartment" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Аппартаменты</label>
+        </form>
+      </div>
+
+      <div class="filter-range">
+        <div class="filter-range-title">Стоимость в сутки (р)</div>
+
+        <div class="price-controls">
+        <label for="min-price" class="min-price">от <input type="text" name="min-price" id="min-price" value="0"></label>
+        <label for="max-price" class="max-price">до <input type="text" name="min-price" id="max-price" value="3000"></label>
+
+        </div>
+
+        <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+        </div>
+
+        <button class="btn-transparent" type="submit">Показать</button>
+
+      </div>
     </div>
 
     <section class="sort-settings">
