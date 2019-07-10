@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <title>Седона отели</title>
 </head>
@@ -13,11 +13,11 @@
 <body>
   <div class="wrapper">
     <header class="main-header">
-
       <nav class="main-navigation">
         <a href="index.html" class="logo">
           <img src="img/logo-sedona.svg" alt="Лого компании Седона" width="140" height="72">
         </a>
+
         <ul class="list-navigation">
           <li><a href="information.html">Информация</a></li>
           <li><a href="photo-and-video.html">Фото и видео</a></li>
@@ -25,93 +25,84 @@
           <li><a class="current" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
-
     </header>
   </div>
 
   <main class="wrapper">
-    <div class=" hotel-form">
-      <div class="infrastructure hotel-search-setting">
-        <h3 class="title-hotel-form">Инфраструктура</h3>
-        <form class="accomodation-form" method="get" action="https://echo.htmlacademy.ru">
-          <label class="login-checkbox" for="pool">
-            <input type="checkbox" name="pool" id="pool" class="visually-hidden" checked>
-            <span class="checkbox-indicator"></span>
-            Бассейн
-          </label>
 
-          <label class="login-checkbox" for="parking">
-            <input type="checkbox" name="parking" id="parking" class="visually-hidden">
-            <span class="checkbox-indicator"></span>
-            Парковка
-          </label>
+    <form class="accomodation-form" method="get" action="https://echo.htmlacademy.ru">
+      <div class=" hotel-form">
+        <div class="infrastructure hotel-search-setting">
+          <h3 class="title-hotel-form">Инфраструктура</h3>
+          <div class="accomodation-form" method="get" action="https://echo.htmlacademy.ru">
+            <label class="login-checkbox" for="pool">
+              <input type="checkbox" name="pool" id="pool" class="visually-hidden" checked>
+              <span class="checkbox-indicator"></span>
+              Бассейн
+            </label>
 
-          <label class="login-checkbox" for="wifi">
-            <input type="checkbox" name="wifi" id="wifi" class="visually-hidden">
-            <span class="checkbox-indicator"></span>
-            wi-fi
-          </label>
-        </form>
-      </div>
+            <label class="login-checkbox" for="parking">
+              <input type="checkbox" name="parking" id="parking" class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              Парковка
+            </label>
 
-      <div class="hotel-search-setting type-of-accomodation">
-        <h3 class="title-hotel-form">Тип жилья:</h3>
-        <form class="accomodation-form" method="get" action="https://echo.htmlacademy.ru">
-
-
-          <label class="login-checkbox" for="hotel">
-            <input type="checkbox" name="hotel" id="hotel" class="visually-hidden" checked>
-            <span class="checkbox-indicator"></span>
-            Гостиница
-          </label>
-
-
-
-          <label class="login-checkbox" for="motel">
-            <input type="checkbox" name="motel" id="motel" class="visually-hidden" checked>
-            <span class="checkbox-indicator"></span>
-            Мотель
-          </label>
-
-
-          <label class="login-checkbox" for="appartment">
-            <input type="checkbox" name="appartment" id="appartment" class="visually-hidden" checked>
-            <span class="checkbox-indicator"></span>
-            Апартаменты
-          </label>
-        </form>
-      </div>
-
-
-
-
-      <form class="filter-range-form" method="get" action="https://echo.htmlacademy.ru">
-        <div class="filter-range-title">Стоимость в сутки (р)</div>
-
-        <div class="price-controls">
-
-          <label for="min-price" class="min-price">
-            от <input type="text" name="min-price" id="min-price" value="0">
-
-          </label>
-          <label for="max-price" class="max-price">до <input type="text" name="min-price" id="max-price" value="3000"></label>
-
-        </div>
-
-        <div class="range-controls">
-          <div class="scale">
-            <div class="bar"></div>
+            <label class="login-checkbox" for="wifi">
+              <input type="checkbox" name="wifi" id="wifi" class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              wi-fi
+            </label>
           </div>
-          <div class="range-toggle range-toggle-min"></div>
-          <div class="range-toggle range-toggle-max"></div>
         </div>
 
-        <button class="btn-transparent" type="submit">Показать</button>
+        <div class="hotel-search-setting">
+          <h3 class="title-hotel-form">Тип жилья:</h3>
+          <div class="accomodation-form" method="get" action="https://echo.htmlacademy.ru">
+            <label class="login-checkbox" for="hotel">
+              <input type="checkbox" name="hotel" id="hotel" class="visually-hidden" checked>
+              <span class="checkbox-indicator"></span>
+              Гостиница
+            </label>
 
-      </form>
-    </div>
+            <label class="login-checkbox" for="motel">
+              <input type="checkbox" name="motel" id="motel" class="visually-hidden" checked>
+              <span class="checkbox-indicator"></span>
+              Мотель
+            </label>
 
+            <label class="login-checkbox" for="appartment">
+              <input type="checkbox" name="appartment" id="appartment" class="visually-hidden" checked>
+              <span class="checkbox-indicator"></span>
+              Апартаменты
+            </label>
+          </div>
+        </div>
 
+        <div class="filter-range-form" method="get" action="https://echo.htmlacademy.ru">
+          <div class="filter-range-title">Стоимость в сутки (р)</div>
+          <div class="price-controls">
+            <label for="min-price" class="min-price">
+              от <input type="text" name="min-price" id="min-price" value="0">
+            </label>
+
+            <label for="max-price" class="max-price">
+              до <input type="text" name="min-price" id="max-price" value="3000">
+            </label>
+          </div>
+
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+
+          <button class="btn-transparent" type="submit">Показать</button>
+        </div>
+      </div>
+
+    </form>
 
     <section class="sort-settings">
       <h2 class="visually-hidden">Сортировать отели</h2>
@@ -119,12 +110,11 @@
       <div class="sort-types">
         <span>Сортировка: </span>
         <ul>
-          <li class="current-setting">по цене</li>
+          <li><a class="current-setting" href="#">по цене</a></li>
           <li><a href="#">по типу</a></li>
           <li><a href="#">по рейтингу</a></li>
         </ul>
       </div>
-
 
       <ul class="sort-controls">
         <li>
@@ -140,18 +130,17 @@
           </a>
         </li>
       </ul>
-
     </section>
 
     <section class="hotel-catalog">
+
       <h2 class="visually-hidden">Список отелей</h2>
       <ul class="hotel-list">
         <li class="hotel-item">
           <div class="description">
-            <a href="#" class="hotels-photo"><img src="img/hotel-amara.jpg" alt="Гостинница Amara Resort & Spa"></a>
+            <a href="#" class="hotels-photo"><img src="img/hotel-amara.jpg" alt="Гостинница Amara Resort & Spa" width="135" height="90"></a>
             <div class="hotel-wrapper">
               <h3><a class="hotel-name" href="#">Amara Resort & Spa</a></h3>
-
               <div class="hotel-name-and-information line-block">
                 <p class="hotel-type">Гостиница </p>
                 <a class="button information" href="#">Подробнее</a>
@@ -168,13 +157,11 @@
             <span class="rating-stars">★★★★</span>
             <span class="rating-mark">Рейтинг: 8.5</span>
           </p>
-
         </li>
-
 
         <li class="hotel-item">
           <div class="description">
-            <a href="#" class="hotels-photo"><img src="img/hotel-desert.jpg" alt="Мотель Desert Quail Inn"></a>
+            <a href="#" class="hotels-photo"><img src="img/hotel-desert.jpg" alt="Мотель Desert Quail Inn" width="135" height="90"></a>
             <div class="hotel-wrapper">
               <h3><a class="hotel-name" href="#">Desert Quail Inn</a></h3>
               <div class="hotel-name-and-information line-block">
@@ -191,15 +178,11 @@
             <span class="rating-stars">★★★</span>
             <span class="rating-mark">Рейтинг: 8.9</span>
           </p>
-
-
         </li>
-
-
 
         <li class="hotel-item">
           <div class="description">
-            <a href="#" class="hotels-photo"><img src="img/hotel-villas.jpg" alt="Апартаменты Villas at Poco Diablo"></a>
+            <a href="#" class="hotels-photo"><img src="img/hotel-villas.jpg" alt="Апартаменты Villas at Poco Diablo" width="135" height="90"></a>
             <div class="hotel-wrapper">
               <h3><a class="hotel-name" href="#">Villas at Poco Diablo</a></h3>
               <div class="hotel-name-and-information line-block">
@@ -216,21 +199,19 @@
             <span class="rating-stars">★★</span>
             <span class="rating-mark">Рейтинг: 9.2</span>
           </p>
-
-
         </li>
       </ul>
+
     </section>
+
   </main>
-
-
 
   <footer class="main-footer">
     <div class="wrapper">
-      <div class="footer-container">
+
+      <div class="footer-container visit-sedona">
         <a class="visit-sedona" href="#">#Visitsedona</a>
       </div>
-
       <div class="footer-container">
         <ul class="footer-social">
           <li><a class="twitter" href="https://twitter.com/?lang=uk" aria-label="Наша Twitter страница " target="_blank">
@@ -253,6 +234,7 @@
           </li>
         </ul>
       </div>
+
       <div class="footer-container">
         <p class="html-academy">
           <span>website by </span>
@@ -268,6 +250,8 @@
     </div>
 
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 
